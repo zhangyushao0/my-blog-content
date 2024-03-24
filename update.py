@@ -40,4 +40,4 @@ while True:
         git_pull(repo_dir)
     else:
         print("没有发现新的更新。")
-    time.sleep(300)  # 每5分钟检查一次
+    time.sleep(60)  # 每5分钟检查一次
