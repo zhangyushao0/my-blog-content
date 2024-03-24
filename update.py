@@ -15,7 +15,7 @@ def fetch_and_check_updates(repo_dir):
 
         # 检查本地HEAD与远程origin/HEAD是否一致
         local_head = subprocess.run(['git', 'rev-parse', 'HEAD'], check=True, stdout=subprocess.PIPE, cwd=repo_dir).stdout
-        remote_head = subprocess.run(['git', 'rev-parse', 'origin/HEAD'], check=True, stdout=subprocess.PIPE, cwd=repo_dir).stdout
+        remote_head = subprocess.run(['git', 'rev-parse', 'origin/main'], check=True, stdout=subprocess.PIPE, cwd=repo_dir).stdout
 
         return local_head != remote_head
     except subprocess.CalledProcessError as e:
