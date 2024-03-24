@@ -151,6 +151,6 @@ a
 
 > It's probably important that images look okay here by default as well:
 
-![hello, world!](./image/image.png)
+![hello, world!](./image/test.png)
 
 
